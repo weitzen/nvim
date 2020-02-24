@@ -18,7 +18,18 @@ set termguicolors
 "is one for the detected filetype)
 "You can enable loading the plugin files for specific file types with:
 filetype plugin on
+"damit wir den vim-internen file explorer ntrw benutzen können
+set nocompatible
 syntax on
+
+set history=200
+" Avoid the Cursor Keys When Recalling Commands from History
+cnoremap <C-p> <Up>
+cnoremap <C-n> <Down>
+
+"Now when we type %% on Vim’s : command-line prompt, it automatically expands
+"to the path of the active buffer, just as though we had typed %:h <Tab>
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 " tell vim where to put its backup files
  set backup
@@ -26,11 +37,16 @@ syntax on
 " " tell vim where to put swap files
  set dir=C:\Users\weitz\AppData\Local\nvim\backupFilesVim\swpFiles\
  set undodir=C:\Users\weitz\AppData\Local\nvim\backupFilesVim\undoFiles\
+
  
 
 "-------------------------------------------------------------
 		"Einstellungen für die Suche
 "-------------------------------------------------------------
+
+"The ** wildcard matches all subdirectories beneath the app/ directory
+"find-cmd findet jetzt files im app-Directory und allen Subdirs darunter
+:set path+=C:/BitbucketRepos/**
 
 "remove the hightlighting of the current search with ESC
 nnoremap <esc> :noh<return><esc>
@@ -80,5 +96,12 @@ set expandtab
 		"Plugins VIM-PLUG SECTION
 "-------------------------------------------------------------
 
+" Plugins will be downloaded under the specified directory.
+call plug#begin('$USERPROFILE/AppData/Local/nvim/plugins')
 
+" Declare the list of plugins.
+Plug 'tpope/vim-surround'
+
+" List ends here. Plugins become visible to Vim after this call.
+call plug#end()
 
