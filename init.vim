@@ -11,6 +11,8 @@ let g:python3_host_prog = 'c:\Users\weitz\nvim_plugins_env\Scripts\python'
 
 set encoding=utf-8  " The encoding displayed.
 set fileencoding=utf-8  " The encoding written to file.
+"use the system keyboard as the default register
+set clipboard=unnamed
 
 "benutze truecolor(24bit color) in der console
 set termguicolors
@@ -26,6 +28,9 @@ set history=200
 " Avoid the Cursor Keys When Recalling Commands from History
 cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
+
+" für das einfachere Pasten vom System Clipboard nach vim 
+set pastetoggle=<f5>
 
 "Now when we type %% on Vim’s : command-line prompt, it automatically expands
 "to the path of the active buffer, just as though we had typed %:h <Tab>
@@ -101,6 +106,8 @@ call plug#begin('$USERPROFILE/AppData/Local/nvim/plugins')
 
 " Declare the list of plugins.
 Plug 'tpope/vim-surround'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'nelstrom/vim-visual-star-search'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
