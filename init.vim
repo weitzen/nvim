@@ -7,10 +7,13 @@
 "Habe ein python environment angelegt für die Dependencies bzw modules die
 "nvim braucht der Pfad weist eben auf die python exe in dem environment, weil
 "wir das das python module für nvim installiert haben.
-let g:python3_host_prog = 'c:\Users\weitz\nvim_plugins_env\Scripts\python'
+let g:python3_host_prog = 'C:\Nvim_venv\env\Scripts\python.exe'
 
 set encoding=utf-8  " The encoding displayed.
 set fileencoding=utf-8  " The encoding written to file.
+
+" leader auf einen key setzen, den man nicht im normal mode braucht
+let mapleader = "-"
 
 "benutze truecolor(24bit color) in der console
 set termguicolors
@@ -22,10 +25,16 @@ filetype plugin on
 set nocompatible
 syntax on
 
+
+" enable autocomplete with words from spell dictionary
+set complete+=k
 set history=200
 " Avoid the Cursor Keys When Recalling Commands from History
 cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
+
+" escape in terminal mode returns to normal mode
+tnoremap <Esc> <C-\><C-n>
 
 "Now when we type %% on Vim’s : command-line prompt, it automatically expands
 "to the path of the active buffer, just as though we had typed %:h <Tab>
@@ -33,12 +42,10 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 " tell vim where to put its backup files
  set backup
- set backupdir=C:\Users\weitz\AppData\Local\nvim\backupFilesVim\backupFiles\
+ set backupdir=C:\Users\weitzsim\AppData\Local\nvim\backupFilesVim\backupFiles\
 " " tell vim where to put swap files
- set dir=C:\Users\weitz\AppData\Local\nvim\backupFilesVim\swpFiles\
- set undodir=C:\Users\weitz\AppData\Local\nvim\backupFilesVim\undoFiles\
-
- 
+ set dir=C:\Users\weitzsim\AppData\Local\nvim\backupFilesVim\swpFiles\
+ set undodir=C:\Users\weitzsim\AppData\Local\nvim\backupFilesVim\undoFiles\
 
 "-------------------------------------------------------------
 		"Einstellungen für die Suche
@@ -50,6 +57,13 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 "remove the hightlighting of the current search with ESC
 nnoremap <esc> :noh<return><esc>
+"schnell das working dir setzen. For example useful for generating tags file
+"in a specific directory 
+nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>
+" schneller tags file fuer ein projekt erstellen
+nnoremap <f5> :!ctags -R<CR>
+" allow to resize panes with mouse in all modes
+set mouse=a
 
 "" Make search case insensitive
 set hlsearch
@@ -99,8 +113,17 @@ set expandtab
 " Plugins will be downloaded under the specified directory.
 call plug#begin('$USERPROFILE/AppData/Local/nvim/plugins')
 
+"PlugInstall [name ...] [#threads] 	Install plugins
+"PlugUpdate [name ...] [#threads] 	Install or update plugins
+"PlugClean[!] 	                    Remove unlisted plugins (bang version will clean without prompt)
+"PlugUpgrade                     	Upgrade vim-plug itself
+"PlugStatus                     	Check the status of plugins
+
 " Declare the list of plugins.
 Plug 'tpope/vim-surround'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'nelstrom/vim-visual-star-search'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
