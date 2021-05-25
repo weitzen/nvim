@@ -11,6 +11,8 @@ let g:python3_host_prog = 'C:\Nvim_venv\env\Scripts\python.exe'
 
 set encoding=utf-8  " The encoding displayed.
 set fileencoding=utf-8  " The encoding written to file.
+"use the system keyboard as the default register
+set clipboard=unnamed
 
 " leader auf einen key setzen, den man nicht im normal mode braucht
 let mapleader = "-"
@@ -35,6 +37,8 @@ cnoremap <C-n> <Down>
 
 " escape in terminal mode returns to normal mode
 tnoremap <Esc> <C-\><C-n>
+" für das einfachere Pasten vom System Clipboard nach vim 
+set pastetoggle=<f5>
 
 "Now when we type %% on Vim’s : command-line prompt, it automatically expands
 "to the path of the active buffer, just as though we had typed %:h <Tab>
