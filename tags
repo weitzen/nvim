@@ -1,0 +1,633 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+$FZF_DEFAULT_COMMAND	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^    let $FZF_DEFAULT_COMMAND = a:grep_command$/;"	v
+$FZF_DEFAULT_COMMAND	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^    let $FZF_DEFAULT_COMMAND = prev_default_command$/;"	v
+%%	.\init.vim	/^cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'\/' : '%%'$/;"	m
+,f	.\initOLD.vim	/^map ,f :Files<CR>$/;"	m
+<C-G>S	.\plugins\vim-surround\plugin\surround.vim	/^    imap      <C-G>S <Plug>ISurround$/;"	m
+<C-G>s	.\plugins\vim-surround\plugin\surround.vim	/^    imap      <C-G>s <Plug>Isurround$/;"	m
+<C-S>	.\plugins\vim-surround\plugin\surround.vim	/^      imap    <C-S> <Plug>Isurround$/;"	m
+<C-n>	.\init.vim	/^cnoremap <C-n> <Down>$/;"	m
+<C-o>	.\initOLD.vim	/^map <C-o> :NERDTreeToggle<CR>$/;"	m
+<C-p>	.\init.vim	/^cnoremap <C-p> <Up>$/;"	m
+<Plug>(-fzf-complete-trigger)	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^inoremap <silent> <Plug>(-fzf-complete-trigger) <c-o>:call <sid>complete_trigger()<cr>$/;"	m
+<Plug>CSurround	.\plugins\vim-surround\plugin\surround.vim	/^nnoremap <silent> <Plug>CSurround  :<C-U>call <SID>changesurround(1)<CR>$/;"	m
+<Plug>Csurround	.\plugins\vim-surround\plugin\surround.vim	/^nnoremap <silent> <Plug>Csurround  :<C-U>call <SID>changesurround()<CR>$/;"	m
+<Plug>Dsurround	.\plugins\vim-surround\plugin\surround.vim	/^nnoremap <silent> <Plug>Dsurround  :<C-U>call <SID>dosurround(<SID>inputtarget())<CR>$/;"	m
+<Plug>ISurround	.\plugins\vim-surround\plugin\surround.vim	/^inoremap <silent> <Plug>ISurround  <C-R>=<SID>insert(1)<CR>$/;"	m
+<Plug>Isurround	.\plugins\vim-surround\plugin\surround.vim	/^inoremap <silent> <Plug>Isurround  <C-R>=<SID>insert()<CR>$/;"	m
+<Plug>SurroundRepeat	.\plugins\vim-surround\plugin\surround.vim	/^nnoremap <silent> <Plug>SurroundRepeat .$/;"	m
+<Plug>VSurround	.\plugins\vim-surround\plugin\surround.vim	/^vnoremap <silent> <Plug>VSurround  :<C-U>call <SID>opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)<CR>$/;"	m
+<Plug>VgSurround	.\plugins\vim-surround\plugin\surround.vim	/^vnoremap <silent> <Plug>VgSurround :<C-U>call <SID>opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)<CR>$/;"	m
+<Plug>YSsurround	.\plugins\vim-surround\plugin\surround.vim	/^nnoremap <expr>   <Plug>YSsurround <SID>opfunc2('setup').'_'$/;"	m
+<Plug>YSurround	.\plugins\vim-surround\plugin\surround.vim	/^nnoremap <expr>   <Plug>YSurround  <SID>opfunc2('setup')$/;"	m
+<Plug>Yssurround	.\plugins\vim-surround\plugin\surround.vim	/^nnoremap <expr>   <Plug>Yssurround '^'.v:count1.<SID>opfunc('setup').'g_'$/;"	m
+<Plug>Ysurround	.\plugins\vim-surround\plugin\surround.vim	/^nnoremap <expr>   <Plug>Ysurround  <SID>opfunc('setup')$/;"	m
+<c-h>	.\init.vim	/^  map <c-h> <c-w>h$/;"	m
+<c-j>	.\init.vim	/^  map <c-j> <c-w>j$/;"	m
+<c-k>	.\init.vim	/^  map <c-k> <c-w>k$/;"	m
+<c-l>	.\init.vim	/^  map <c-l> <c-w>l$/;"	m
+<esc>	.\init.vim	/^nnoremap <esc> :noh<return><esc>$/;"	m
+<leader>cd	.\init.vim	/^nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>$/;"	m
+<plug>(-fzf-/)	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^nnoremap <plug>(-fzf-\/) \/$/;"	m
+<plug>(-fzf-:)	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^nnoremap <plug>(-fzf-:) :$/;"	m
+<plug>(-fzf-vim-do)	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^nnoremap <plug>(-fzf-vim-do) :execute g:__fzf_command<cr>$/;"	m
+<plug>(fzf-complete-buffer-line)	.\plugins\fzf.vim\plugin\fzf.vim	/^inoremap <expr> <plug>(fzf-complete-buffer-line) fzf#vim#complete#buffer_line()$/;"	m
+<plug>(fzf-complete-file)	.\plugins\fzf.vim\plugin\fzf.vim	/^  inoremap <expr> <plug>(fzf-complete-file)      fzf#vim#complete#path("find . -path '*\/\\.*' -prune -o -type f -print -o -type l -print \\| sed 's:^..::'")$/;"	m
+<plug>(fzf-complete-file)	.\plugins\fzf.vim\plugin\fzf.vim	/^  inoremap <expr> <plug>(fzf-complete-file)      fzf#vim#complete#path('dir \/s\/b\/a:-d')$/;"	m
+<plug>(fzf-complete-file-ag)	.\plugins\fzf.vim\plugin\fzf.vim	/^inoremap <expr> <plug>(fzf-complete-file-ag)     fzf#vim#complete#path('ag -l -g ""')$/;"	m
+<plug>(fzf-complete-line)	.\plugins\fzf.vim\plugin\fzf.vim	/^inoremap <expr> <plug>(fzf-complete-line)        fzf#vim#complete#line()$/;"	m
+<plug>(fzf-complete-path)	.\plugins\fzf.vim\plugin\fzf.vim	/^  inoremap <expr> <plug>(fzf-complete-path)      fzf#vim#complete#path("find . -path '*\/\\.*' -prune -o -print \\| sed '1d;s:^..::'")$/;"	m
+<plug>(fzf-complete-path)	.\plugins\fzf.vim\plugin\fzf.vim	/^  inoremap <expr> <plug>(fzf-complete-path)      fzf#vim#complete#path('dir \/s\/b')$/;"	m
+<plug>(fzf-complete-word)	.\plugins\fzf.vim\plugin\fzf.vim	/^inoremap <expr> <plug>(fzf-complete-word)        fzf#vim#complete#word()$/;"	m
+<plug>(fzf-maps-i)	.\plugins\fzf.vim\plugin\fzf.vim	/^inoremap <silent> <plug>(fzf-maps-i) <c-o>:call fzf#vim#maps('i', 0)<cr>$/;"	m
+<plug>(fzf-maps-n)	.\plugins\fzf.vim\plugin\fzf.vim	/^nnoremap <silent> <plug>(fzf-maps-n) :<c-u>call fzf#vim#maps('n', 0)<cr>$/;"	m
+<plug>(fzf-maps-o)	.\plugins\fzf.vim\plugin\fzf.vim	/^onoremap <silent> <plug>(fzf-maps-o) <c-c>:<c-u>call fzf#vim#maps('o', 0)<cr>$/;"	m
+CompletionTest	.\plugins\fzf\test\test_go.rb	/^module CompletionTest$/;"	m	class:TestBase
+FZF	.\plugins\fzf\plugin\fzf.vim	/^command! -nargs=* -complete=dir -bang FZF call s:cmd(<bang>0, <f-args>)$/;"	c
+NilClass	.\plugins\fzf\test\test_go.rb	/^class NilClass$/;"	c
+Shell	.\plugins\fzf\test\test_go.rb	/^class Shell$/;"	c
+TestBase	.\plugins\fzf\test\test_go.rb	/^class TestBase < Minitest::Test$/;"	c
+TestBash	.\plugins\fzf\test\test_go.rb	/^class TestBash < TestBase$/;"	c	class:TestBase
+TestFish	.\plugins\fzf\test\test_go.rb	/^class TestFish < TestBase$/;"	c	class:TestBase
+TestGoFZF	.\plugins\fzf\test\test_go.rb	/^class TestGoFZF < TestBase$/;"	c	class:TestBase
+TestShell	.\plugins\fzf\test\test_go.rb	/^module TestShell$/;"	m	class:TestBase
+TestZsh	.\plugins\fzf\test\test_go.rb	/^class TestZsh < TestBase$/;"	c	class:TestBase
+Tmux	.\plugins\fzf\test\test_go.rb	/^class Tmux$/;"	c
+__fsel	.\plugins\fzf\shell\key-bindings.zsh	/^__fsel() {$/;"	f
+__fzf_cd__	.\plugins\fzf\shell\key-bindings.bash	/^__fzf_cd__() {$/;"	f
+__fzf_comprun	.\plugins\fzf\shell\completion.bash	/^__fzf_comprun() {$/;"	f
+__fzf_comprun	.\plugins\fzf\shell\completion.zsh	/^__fzf_comprun() {$/;"	f
+__fzf_defc	.\plugins\fzf\shell\completion.bash	/^__fzf_defc() {$/;"	f
+__fzf_extract_command	.\plugins\fzf\shell\completion.zsh	/^__fzf_extract_command() {$/;"	f
+__fzf_generic_path_completion	.\plugins\fzf\shell\completion.bash	/^__fzf_generic_path_completion() {$/;"	f
+__fzf_generic_path_completion	.\plugins\fzf\shell\completion.zsh	/^__fzf_generic_path_completion() {$/;"	f
+__fzf_history__	.\plugins\fzf\shell\key-bindings.bash	/^__fzf_history__() ($/;"	f
+__fzf_orig_completion_filter	.\plugins\fzf\shell\completion.bash	/^__fzf_orig_completion_filter() {$/;"	f
+__fzf_select__	.\plugins\fzf\shell\key-bindings.bash	/^__fzf_select__() {$/;"	f
+__fzf_select_tmux__	.\plugins\fzf\shell\key-bindings.bash	/^__fzf_select_tmux__() {$/;"	f
+__fzf_use_tmux__	.\plugins\fzf\shell\key-bindings.bash	/^__fzf_use_tmux__() {$/;"	f
+__fzf_use_tmux__	.\plugins\fzf\shell\key-bindings.zsh	/^__fzf_use_tmux__() {$/;"	f
+__fzfcmd	.\plugins\fzf\shell\key-bindings.bash	/^__fzfcmd() {$/;"	f
+__fzfcmd	.\plugins\fzf\shell\key-bindings.zsh	/^__fzfcmd() {$/;"	f
+_fzf_alias_completion	.\plugins\fzf\shell\completion.bash	/^_fzf_alias_completion() {$/;"	f
+_fzf_compgen_dir	.\plugins\fzf\shell\completion.bash	/^  _fzf_compgen_dir() {$/;"	f
+_fzf_compgen_dir	.\plugins\fzf\shell\completion.zsh	/^  _fzf_compgen_dir() {$/;"	f
+_fzf_compgen_path	.\plugins\fzf\shell\completion.bash	/^  _fzf_compgen_path() {$/;"	f
+_fzf_compgen_path	.\plugins\fzf\shell\completion.zsh	/^  _fzf_compgen_path() {$/;"	f
+_fzf_complete	.\plugins\fzf\shell\completion.bash	/^_fzf_complete() {$/;"	f
+_fzf_complete	.\plugins\fzf\shell\completion.zsh	/^_fzf_complete() {$/;"	f
+_fzf_complete_export	.\plugins\fzf\shell\completion.zsh	/^_fzf_complete_export() {$/;"	f
+_fzf_complete_kill	.\plugins\fzf\shell\completion.bash	/^_fzf_complete_kill() {$/;"	f
+_fzf_complete_ssh	.\plugins\fzf\shell\completion.zsh	/^_fzf_complete_ssh() {$/;"	f
+_fzf_complete_telnet	.\plugins\fzf\shell\completion.zsh	/^_fzf_complete_telnet() {$/;"	f
+_fzf_complete_unalias	.\plugins\fzf\shell\completion.zsh	/^_fzf_complete_unalias() {$/;"	f
+_fzf_complete_unset	.\plugins\fzf\shell\completion.zsh	/^_fzf_complete_unset() {$/;"	f
+_fzf_dir_completion	.\plugins\fzf\shell\completion.bash	/^_fzf_dir_completion() {$/;"	f
+_fzf_dir_completion	.\plugins\fzf\shell\completion.zsh	/^_fzf_dir_completion() {$/;"	f
+_fzf_feed_fifo	.\plugins\fzf\shell\completion.zsh	/^_fzf_feed_fifo() ($/;"	f
+_fzf_file_completion	.\plugins\fzf\shell\completion.bash	/^_fzf_file_completion() {$/;"	f
+_fzf_handle_dynamic_completion	.\plugins\fzf\shell\completion.bash	/^_fzf_handle_dynamic_completion() {$/;"	f
+_fzf_host_completion	.\plugins\fzf\shell\completion.bash	/^_fzf_host_completion() {$/;"	f
+_fzf_opts_completion	.\plugins\fzf\shell\completion.bash	/^_fzf_opts_completion() {$/;"	f
+_fzf_path_completion	.\plugins\fzf\shell\completion.bash	/^_fzf_path_completion() {$/;"	f
+_fzf_path_completion	.\plugins\fzf\shell\completion.zsh	/^_fzf_path_completion() {$/;"	f
+_fzf_setup_completion	.\plugins\fzf\shell\completion.bash	/^_fzf_setup_completion() {$/;"	f
+_fzf_statusline	.\plugins\fzf.vim\plugin\fzf.vim	/^  augroup _fzf_statusline$/;"	a
+_fzf_var_completion	.\plugins\fzf\shell\completion.bash	/^_fzf_var_completion() {$/;"	f
+a:temps	.\plugins\fzf\plugin\fzf.vim	/^    let a:temps.shellscript = shellscript$/;"	v
+action_for	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:action_for(key, ...)$/;"	f
+ag_handler	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:ag_handler(lines, has_column)$/;"	f
+ag_to_qf	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:ag_to_qf(line, has_column)$/;"	f
+align_lists	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:align_lists(lists)$/;"	f
+align_pairs	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:align_pairs(list)$/;"	f
+all_files	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:all_files()$/;"	f
+ansi	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:ansi(str, group, default, ...)$/;"	f
+any_include?	.\plugins\fzf\test\test_go.rb	/^          def any_include?(val)$/;"	f	class:Tmux.until
+append_ul	.\autoload\plug.vim	/^function! s:append_ul(lnum, text)$/;"	f
+ask	.\autoload\plug.vim	/^function! s:ask(message, ...)$/;"	f
+ask_no_interrupt	.\autoload\plug.vim	/^function! s:ask_no_interrupt(...)$/;"	f
+assign_name	.\autoload\plug.vim	/^function! s:assign_name()$/;"	f
+assoc	.\autoload\plug.vim	/^function! s:assoc(dict, key, val)$/;"	f
+bang	.\autoload\plug.vim	/^function! s:bang(cmd, ...)$/;"	f
+bar	.\autoload\plug.vim	/^function! s:bar()$/;"	f
+bash	.\plugins\fzf\test\test_go.rb	/^    def bash$/;"	f	class:Shell
+batchfile	.\autoload\plug.vim	/^  function! s:batchfile(cmd)$/;"	f
+beep	.\plugins\vim-surround\plugin\surround.vim	/^function! s:beep()$/;"	f
+btags_sink	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:btags_sink(lines)$/;"	f
+btags_source	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:btags_source(tag_cmds)$/;"	f
+buffer_line_handler	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:buffer_line_handler(lines)$/;"	f
+buffer_lines	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:buffer_lines(query)$/;"	f
+buflisted	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:buflisted()$/;"	f
+buflisted_sorted	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:buflisted_sorted()$/;"	f
+bufopen	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:bufopen(lines)$/;"	f
+cS	.\plugins\vim-surround\plugin\surround.vim	/^  nmap cS  <Plug>CSurround$/;"	m
+calc_size	.\plugins\fzf\plugin\fzf.vim	/^function! s:calc_size(max, val, dict)$/;"	f
+callback	.\plugins\fzf\plugin\fzf.vim	/^function! s:callback(dict, lines) abort$/;"	f
+capture	.\plugins\fzf\test\test_go.rb	/^  def capture(pane = 0)$/;"	f	class:Tmux
+changesurround	.\plugins\vim-surround\plugin\surround.vim	/^function! s:changesurround(...) " {{{1$/;"	f
+check_ruby	.\autoload\plug.vim	/^function! s:check_ruby()$/;"	f
+checkout	.\autoload\plug.vim	/^function! s:checkout(spec)$/;"	f
+chomp	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:chomp(str)$/;"	f
+chsh	.\autoload\plug.vim	/^function! s:chsh(swap)$/;"	f
+clean	.\autoload\plug.vim	/^function! s:clean(force)$/;"	f
+closematch	.\plugins\vim-surround\plugin\surround.vim	/^function! s:closematch(str) " {{{1$/;"	f
+cmd	.\plugins\fzf\plugin\fzf.vim	/^      let cmd = 'start \/wait cmd \/c '.command$/;"	v
+cmd	.\plugins\fzf\plugin\fzf.vim	/^function! s:cmd(bang, ...) abort$/;"	f
+cmd_history_sink	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:cmd_history_sink(lines)$/;"	f
+collect	.\plugins\fzf\plugin\fzf.vim	/^function! s:collect(temps) abort$/;"	f
+command	.\plugins\fzf\plugin\fzf.vim	/^      let command = a:command$/;"	v
+command	.\plugins\fzf\plugin\fzf.vim	/^      let command = fzf.temps.batchfile$/;"	v
+command	.\plugins\fzf\plugin\fzf.vim	/^    let command .= s:term_marker$/;"	v
+command	.\plugins\fzf\plugin\fzf.vim	/^    let command = 'cmd.exe \/C '.fzf#shellescape('set "TERM=" & start \/WAIT sh -c '.shellscript)$/;"	v
+command_sink	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:command_sink(lines)$/;"	f
+commits	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:commits(buffer_local, args)$/;"	f
+commits_sink	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:commits_sink(lines)$/;"	f
+common_sink	.\plugins\fzf\plugin\fzf.vim	/^function! s:common_sink(action, lines) abort$/;"	f
+compare_git_uri	.\autoload\plug.vim	/^function! s:compare_git_uri(a, b)$/;"	f
+complete_insert	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:complete_insert(lines)$/;"	f
+complete_trigger	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:complete_trigger()$/;"	f
+counts	.\plugins\fzf\test\test_go.rb	/^          def counts$/;"	f	class:Tmux.until
+create_popup	.\plugins\fzf\plugin\fzf.vim	/^  function s:create_popup(hl, opts) abort$/;"	f
+create_popup	.\plugins\fzf\plugin\fzf.vim	/^  function! s:create_popup(hl, opts) abort$/;"	f
+cs	.\plugins\vim-surround\plugin\surround.vim	/^  nmap cs  <Plug>Csurround$/;"	m
+csi	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:csi(color, fg)$/;"	f
+defaults	.\plugins\fzf\plugin\fzf.vim	/^function! s:defaults()$/;"	f
+define_commands	.\autoload\plug.vim	/^function! s:define_commands()$/;"	f
+defs	.\plugins\fzf.vim\plugin\fzf.vim	/^function! s:defs(commands)$/;"	f
+delete	.\autoload\plug.vim	/^function! s:delete(range, force)$/;"	f
+delete_op	.\autoload\plug.vim	/^function! s:delete_op(type, ...)$/;"	f
+diff	.\autoload\plug.vim	/^function! s:diff()$/;"	f
+dirpath	.\autoload\plug.vim	/^  function! s:dirpath(path)$/;"	f
+do	.\autoload\plug.vim	/^function! s:do(pull, force, todo)$/;"	f
+doautocmd	.\autoload\plug.vim	/^function! s:doautocmd(...)$/;"	f
+dobufread	.\autoload\plug.vim	/^function! s:dobufread(names)$/;"	f
+dopopd	.\plugins\fzf\plugin\fzf.vim	/^function! s:dopopd()$/;"	f
+dosurround	.\plugins\vim-surround\plugin\surround.vim	/^function! s:dosurround(...) " {{{1$/;"	f
+ds	.\plugins\vim-surround\plugin\surround.vim	/^  nmap ds  <Plug>Dsurround$/;"	m
+enc_to_cp	.\plugins\fzf\plugin\fzf.vim	/^  function! s:enc_to_cp(str)$/;"	f
+end_with?	.\plugins\fzf\test\test_go.rb	/^  def end_with?(_str)$/;"	f	class:NilClass
+err	.\autoload\plug.vim	/^function! s:err(msg)$/;"	f
+error	.\plugins\fzf\plugin\fzf.vim	/^function! s:error(msg)$/;"	f
+esc	.\autoload\plug.vim	/^function! s:esc(path)$/;"	f
+escape	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:escape(path)$/;"	f
+escape	.\plugins\fzf\plugin\fzf.vim	/^function! s:escape(path)$/;"	f
+escrtp	.\autoload\plug.vim	/^function! s:escrtp(path)$/;"	f
+eval	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:eval(dict, key, arg)$/;"	f
+evaluate_opts	.\plugins\fzf\plugin\fzf.vim	/^function! s:evaluate_opts(options)$/;"	f
+excmds	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:excmds()$/;"	f
+execute	.\plugins\fzf\plugin\fzf.vim	/^function! s:execute(dict, command, use_height, temps) abort$/;"	f
+execute_term	.\plugins\fzf\plugin\fzf.vim	/^function! s:execute_term(dict, command, temps) abort$/;"	f
+execute_tmux	.\plugins\fzf\plugin\fzf.vim	/^function! s:execute_tmux(dict, command, temps) abort$/;"	f
+exit_handler	.\plugins\fzf\plugin\fzf.vim	/^function! s:exit_handler(code, command, ...)$/;"	f
+exit_status	.\plugins\fzf\plugin\fzf.vim	/^  let exit_status = v:shell_error$/;"	v
+extend	.\plugins\fzf.vim\autoload\fzf\vim\complete.vim	/^function! s:extend(base, extra)$/;"	f
+extend_opts	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:extend_opts(dict, eopts, prepend)$/;"	f
+extract_name	.\autoload\plug.vim	/^function! s:extract_name(str, prefix, suffix)$/;"	f
+extractafter	.\plugins\vim-surround\plugin\surround.vim	/^function! s:extractafter(str)$/;"	f
+extractbefore	.\plugins\vim-surround\plugin\surround.vim	/^function! s:extractbefore(str)$/;"	f
+file_options	.\plugins\fzf.vim\autoload\fzf\vim\complete.vim	/^function! s:file_options(prefix)$/;"	f
+file_source	.\plugins\fzf.vim\autoload\fzf\vim\complete.vim	/^function! s:file_source(prefix)$/;"	f
+file_split_prefix	.\plugins\fzf.vim\autoload\fzf\vim\complete.vim	/^function! s:file_split_prefix(prefix)$/;"	f
+fill_quickfix	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:fill_quickfix(list, ...)$/;"	f
+find_name	.\autoload\plug.vim	/^function! s:find_name(lnum)$/;"	f
+find_open_window	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:find_open_window(b)$/;"	f
+finish	.\autoload\plug.vim	/^function! s:finish(pull)$/;"	f
+finish_bindings	.\autoload\plug.vim	/^function! s:finish_bindings()$/;"	f
+first_line	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:first_line(lines)$/;"	f
+fish	.\plugins\fzf\test\test_go.rb	/^    def fish$/;"	f	class:Shell
+fixindent	.\plugins\vim-surround\plugin\surround.vim	/^function! s:fixindent(str,spc)$/;"	f
+fname_prefix	.\plugins\fzf.vim\autoload\fzf\vim\complete.vim	/^function! s:fname_prefix(str)$/;"	f
+format_buffer	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:format_buffer(b)$/;"	f
+format_cmd	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:format_cmd(line)$/;"	f
+format_excmd	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:format_excmd(ex)$/;"	f
+format_git_log	.\autoload\plug.vim	/^function! s:format_git_log(line)$/;"	f
+format_mark	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:format_mark(line)$/;"	f
+format_message	.\autoload\plug.vim	/^function! s:format_message(bullet, name, message)$/;"	f
+format_win	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:format_win(tab, win, buf)$/;"	f
+function	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^  function! s:function(name)$/;"	f
+function	.\plugins\fzf.vim\autoload\fzf\vim\complete.vim	/^  function! s:function(name)$/;"	f
+fzf	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:fzf(name, opts, extra)$/;"	f
+fzf	.\plugins\fzf\plugin\fzf.vim	/^      let fzf.buf = term_start([&shell, &shellcmdflag, command], {'curwin': 1, 'exit_cb': function(fzf.on_exit)})$/;"	v
+fzf	.\plugins\fzf\plugin\fzf.vim	/^      let fzf.temps.batchfile = s:fzf_tempname().'.bat'$/;"	v
+fzf	.\plugins\fzf\test\test_go.rb	/^  def fzf(*opts)$/;"	f	class:TestBase
+fzf!	.\plugins\fzf\test\test_go.rb	/^  def fzf!(*opts)$/;"	f	class:TestBase
+fzf#complete	.\plugins\fzf.vim\plugin\fzf.vim	/^function! fzf#complete(...)$/;"	f
+fzf#install	.\plugins\fzf\plugin\fzf.vim	/^function! fzf#install()$/;"	f
+fzf#run	.\plugins\fzf\plugin\fzf.vim	/^function! fzf#run(...) abort$/;"	f
+fzf#shellescape	.\plugins\fzf\plugin\fzf.vim	/^function! fzf#shellescape(arg, ...)$/;"	f
+fzf#vim#_lines	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! fzf#vim#_lines(all)$/;"	f
+fzf#vim#_uniq	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! fzf#vim#_uniq(list)$/;"	f
+fzf#vim#ag	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! fzf#vim#ag(query, ...)$/;"	f
+fzf#vim#ag_raw	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! fzf#vim#ag_raw(command_suffix, ...)$/;"	f
+fzf#vim#buffer_commits	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! fzf#vim#buffer_commits(...)$/;"	f
+fzf#vim#buffer_lines	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! fzf#vim#buffer_lines(...)$/;"	f
+fzf#vim#buffer_tags	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! fzf#vim#buffer_tags(query, ...)$/;"	f
+fzf#vim#buffers	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! fzf#vim#buffers(...)$/;"	f
+fzf#vim#colors	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! fzf#vim#colors(...)$/;"	f
+fzf#vim#command_history	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! fzf#vim#command_history(...)$/;"	f
+fzf#vim#commands	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! fzf#vim#commands(...)$/;"	f
+fzf#vim#commits	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! fzf#vim#commits(...)$/;"	f
+fzf#vim#complete	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! fzf#vim#complete(...)$/;"	f
+fzf#vim#complete#buffer_line	.\plugins\fzf.vim\autoload\fzf\vim\complete.vim	/^function! fzf#vim#complete#buffer_line(...)$/;"	f
+fzf#vim#complete#line	.\plugins\fzf.vim\autoload\fzf\vim\complete.vim	/^function! fzf#vim#complete#line(...)$/;"	f
+fzf#vim#complete#path	.\plugins\fzf.vim\autoload\fzf\vim\complete.vim	/^function! fzf#vim#complete#path(command, ...)$/;"	f
+fzf#vim#complete#word	.\plugins\fzf.vim\autoload\fzf\vim\complete.vim	/^function! fzf#vim#complete#word(...)$/;"	f
+fzf#vim#files	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! fzf#vim#files(dir, ...)$/;"	f
+fzf#vim#filetypes	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! fzf#vim#filetypes(...)$/;"	f
+fzf#vim#gitfiles	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! fzf#vim#gitfiles(args, ...)$/;"	f
+fzf#vim#grep	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! fzf#vim#grep(grep_command, has_column, ...)$/;"	f
+fzf#vim#helptags	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! fzf#vim#helptags(...)$/;"	f
+fzf#vim#history	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! fzf#vim#history(...)$/;"	f
+fzf#vim#lines	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! fzf#vim#lines(...)$/;"	f
+fzf#vim#locate	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! fzf#vim#locate(query, ...)$/;"	f
+fzf#vim#maps	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! fzf#vim#maps(mode, ...)$/;"	f
+fzf#vim#marks	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! fzf#vim#marks(...)$/;"	f
+fzf#vim#search_history	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! fzf#vim#search_history(...)$/;"	f
+fzf#vim#snippets	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! fzf#vim#snippets(...)$/;"	f
+fzf#vim#tags	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! fzf#vim#tags(query, ...)$/;"	f
+fzf#vim#windows	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! fzf#vim#windows(...)$/;"	f
+fzf#vim#with_preview	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! fzf#vim#with_preview(...)$/;"	f
+fzf#wrap	.\plugins\fzf\plugin\fzf.vim	/^function! fzf#wrap(...)$/;"	f
+fzf.on_exit	.\plugins\fzf\plugin\fzf.vim	/^  function! fzf.on_exit(id, code, ...)$/;"	f
+fzf_buffers	.\plugins\fzf.vim\plugin\fzf.vim	/^augroup fzf_buffers$/;"	a
+fzf_call	.\plugins\fzf\plugin\fzf.vim	/^  function! s:fzf_call(fn, ...)$/;"	f
+fzf_exec	.\plugins\fzf\plugin\fzf.vim	/^function! s:fzf_exec()$/;"	f
+fzf_expand	.\plugins\fzf\plugin\fzf.vim	/^function! s:fzf_expand(fmt)$/;"	f
+fzf_fnamemodify	.\plugins\fzf\plugin\fzf.vim	/^function! s:fzf_fnamemodify(fname, mods)$/;"	f
+fzf_getcwd	.\plugins\fzf\plugin\fzf.vim	/^function! s:fzf_getcwd()$/;"	f
+fzf_popd	.\plugins\fzf\plugin\fzf.vim	/^augroup fzf_popd$/;"	a
+fzf_restore_colors	.\plugins\fzf.vim\plugin\fzf.vim	/^  function! s:fzf_restore_colors()$/;"	f
+fzf_tempname	.\plugins\fzf\plugin\fzf.vim	/^function! s:fzf_tempname()$/;"	f
+fzf_tmux	.\plugins\fzf\plugin\fzf.vim	/^function! s:fzf_tmux(dict)$/;"	f
+fzf_vim_term	.\plugins\fzf.vim\plugin\fzf.vim	/^  function! s:fzf_vim_term()$/;"	f
+g:deoplete#enable_at_startup	.\initOLD.vim	/^let g:deoplete#enable_at_startup = 1$/;"	v
+g:fzf#vim#buffers	.\plugins\fzf.vim\plugin\fzf.vim	/^  let g:fzf#vim#buffers = {}$/;"	v
+g:instant_markdown_autostart	.\initOLD.vim	/^let g:instant_markdown_autostart = 0$/;"	v
+g:loaded_fzf	.\plugins\fzf\plugin\fzf.vim	/^let g:loaded_fzf = 1$/;"	v
+g:loaded_plug	.\autoload\plug.vim	/^let g:loaded_plug = 1$/;"	v
+g:loaded_surround	.\plugins\vim-surround\plugin\surround.vim	/^let g:loaded_surround = 1$/;"	v
+g:plugs_order	.\autoload\plug.vim	/^  let g:plugs_order = get(g:, 'plugs_order', keys(g:plugs))$/;"	v
+g:python3_host_prog	.\init.vim	/^let g:python3_host_prog = 'C:\\Nvim_venv\\env\\Scripts\\python.exe'$/;"	v
+g:tex_conceal	.\initOLD.vim	/^  let g:tex_conceal = ''$/;"	v
+g:tex_flavor	.\initOLD.vim	/^ let g:tex_flavor  = 'latex'$/;"	v
+g:vimtex_compiler_progname	.\initOLD.vim	/^  let g:vimtex_compiler_progname = 'nvr'$/;"	v
+g:vimtex_compiler_progname	.\initOLD.vim	/^let g:vimtex_compiler_progname = 'C:\\Users\\weitz\\AppData\\Local\\Programs\\Python\\Python35\\Scripts\\nvr.exe' "braucht man für vimtex$/;"	v
+g:vimtex_fold_manual	.\initOLD.vim	/^  let g:vimtex_fold_manual = 1$/;"	v
+g:vimtex_latexmk_continuous	.\initOLD.vim	/^  let g:vimtex_latexmk_continuous = 1$/;"	v
+g:vimtex_view_general_options	.\initOLD.vim	/^let g:vimtex_view_general_options$/;"	v
+g:vimtex_view_general_options_latexmk	.\initOLD.vim	/^let g:vimtex_view_general_options_latexmk = '-reuse-instance'$/;"	v
+g:vimtex_view_general_viewer	.\initOLD.vim	/^let g:vimtex_view_general_viewer = 'SumatraPDF'$/;"	v
+get_color	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:get_color(attr, ...)$/;"	f
+get_color	.\plugins\fzf\plugin\fzf.vim	/^function! s:get_color(attr, ...)$/;"	f
+get_git_root	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:get_git_root()$/;"	f
+getchar	.\plugins\vim-surround\plugin\surround.vim	/^function! s:getchar()$/;"	f
+getpos	.\plugins\fzf\plugin\fzf.vim	/^function! s:getpos()$/;"	f
+git_validate	.\autoload\plug.vim	/^function! s:git_validate(spec, check_branch)$/;"	f
+git_version_requirement	.\autoload\plug.vim	/^function! s:git_version_requirement(...)$/;"	f
+glob	.\autoload\plug.vim	/^function! s:glob(from, pattern)$/;"	f
+glob_dir	.\autoload\plug.vim	/^function! s:glob_dir(path)$/;"	f
+go	.\plugins\fzf\test\test_go.rb	/^  def go(*args)$/;"	f
+has_any	.\plugins\fzf\plugin\fzf.vim	/^function! s:has_any(dict, keys)$/;"	f
+hash_match	.\autoload\plug.vim	/^function! s:hash_match(a, b)$/;"	f
+helptag_sink	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:helptag_sink(line)$/;"	f
+highlight_keys	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:highlight_keys(str)$/;"	f
+history	.\plugins\fzf.vim\plugin\fzf.vim	/^function! s:history(arg, bang)$/;"	f
+history_sink	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:history_sink(type, lines)$/;"	f
+history_source	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:history_source(type)$/;"	f
+include?	.\plugins\fzf\test\test_go.rb	/^  def include?(_str)$/;"	f	class:NilClass
+infer_properties	.\autoload\plug.vim	/^function! s:infer_properties(name, repo)$/;"	f
+initialize	.\plugins\fzf\test\test_go.rb	/^  def initialize(shell = :bash)$/;"	f	class:Tmux
+inject_snippet	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:inject_snippet(line)$/;"	f
+inputreplacement	.\plugins\vim-surround\plugin\surround.vim	/^function! s:inputreplacement()$/;"	f
+inputtarget	.\plugins\vim-surround\plugin\surround.vim	/^function! s:inputtarget()$/;"	f
+insert	.\plugins\vim-surround\plugin\surround.vim	/^function! s:insert(...) " {{{1$/;"	f
+install	.\autoload\plug.vim	/^function! s:install(force, names)$/;"	f
+is_local_plug	.\autoload\plug.vim	/^  function! s:is_local_plug(repo)$/;"	f
+is_managed	.\autoload\plug.vim	/^function! s:is_managed(name)$/;"	f
+is_preview_window_open	.\autoload\plug.vim	/^function! s:is_preview_window_open()$/;"	f
+is_updated	.\autoload\plug.vim	/^function! s:is_updated(dir)$/;"	f
+item_count	.\plugins\fzf\test\test_go.rb	/^          def item_count$/;"	f	class:Tmux.until
+job_abort	.\autoload\plug.vim	/^function! s:job_abort()$/;"	f
+job_cb	.\autoload\plug.vim	/^function! s:job_cb(fn, job, ch, data)$/;"	f
+job_exit_cb	.\autoload\plug.vim	/^function! s:job_exit_cb(self, data) abort$/;"	f
+job_out_cb	.\autoload\plug.vim	/^function! s:job_out_cb(self, data) abort$/;"	f
+jump	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:jump(t, w)$/;"	f
+key_sink	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:key_sink(line)$/;"	f
+kill	.\plugins\fzf\test\test_go.rb	/^  def kill$/;"	f	class:Tmux
+last_non_empty_line	.\autoload\plug.vim	/^function! s:last_non_empty_line(lines)$/;"	f
+lastline	.\autoload\plug.vim	/^function! s:lastline(msg)$/;"	f
+lazy	.\autoload\plug.vim	/^function! s:lazy(plug, opt)$/;"	f
+line_handler	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:line_handler(lines)$/;"	f
+lines	.\autoload\plug.vim	/^function! s:lines(msg)$/;"	f
+load_plugin	.\autoload\plug.vim	/^function! s:load_plugin(spec)$/;"	f
+loaded_names	.\autoload\plug.vim	/^function! s:loaded_names()$/;"	f
+lod	.\autoload\plug.vim	/^function! s:lod(names, types, ...)$/;"	f
+lod_cmd	.\autoload\plug.vim	/^function! s:lod_cmd(cmd, bang, l1, l2, args, names)$/;"	f
+lod_ft	.\autoload\plug.vim	/^function! s:lod_ft(pat, names)$/;"	f
+lod_map	.\autoload\plug.vim	/^function! s:lod_map(map, names, with_prefix, prefix)$/;"	f
+log	.\autoload\plug.vim	/^function! s:log(bullet, name, lines)$/;"	f
+log4	.\autoload\plug.vim	/^function! s:log4(name, msg)$/;"	f
+logpos	.\autoload\plug.vim	/^function! s:logpos(name)$/;"	f
+lpad	.\autoload\plug.vim	/^function! s:lpad(str, len)$/;"	f
+mapleader	.\init.vim	/^let mapleader = "-"$/;"	v
+mark_sink	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:mark_sink(lines)$/;"	f
+match_count	.\plugins\fzf\test\test_go.rb	/^          def match_count$/;"	f	class:Tmux.until
+merge_opts	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:merge_opts(dict, eopts)$/;"	f
+names	.\autoload\plug.vim	/^function! s:names(...)$/;"	f
+new_shell	.\plugins\fzf\test\test_go.rb	/^  def new_shell$/;"	f	class:TestBase.TestBash
+new_shell	.\plugins\fzf\test\test_go.rb	/^  def new_shell$/;"	f	class:TestBase.TestFish
+new_shell	.\plugins\fzf\test\test_go.rb	/^  def new_shell$/;"	f	class:TestBase.TestZsh
+new_window	.\autoload\plug.vim	/^function! s:new_window()$/;"	f
+nvim_cb	.\autoload\plug.vim	/^function! s:nvim_cb(job_id, data, event) dict abort$/;"	f
+open	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:open(cmd, target)$/;"	f
+open	.\plugins\fzf\plugin\fzf.vim	/^function! s:open(cmd, target)$/;"	f
+opfunc	.\plugins\vim-surround\plugin\surround.vim	/^function! s:opfunc(type, ...) abort " {{{1$/;"	f
+opfunc2	.\plugins\vim-surround\plugin\surround.vim	/^function! s:opfunc2(...) abort$/;"	f
+opts	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^  let opts['sink*'] = remove(opts, 'sink')$/;"	v
+opts	.\plugins\fzf\plugin\fzf.vim	/^    let opts['sink*'] = remove(opts, 'sink')$/;"	v
+parse_options	.\autoload\plug.vim	/^function! s:parse_options(arg)$/;"	f
+paste	.\plugins\fzf\test\test_go.rb	/^  def paste(str)$/;"	f	class:Tmux
+path	.\autoload\plug.vim	/^  function! s:path(path)$/;"	f
+pluck	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:pluck(dict, key, default)$/;"	f
+plug#	.\autoload\plug.vim	/^function! plug#(repo, ...)$/;"	f
+plug#begin	.\autoload\plug.vim	/^function! plug#begin(...)$/;"	f
+plug#end	.\autoload\plug.vim	/^function! plug#end()$/;"	f
+plug#helptags	.\autoload\plug.vim	/^function! plug#helptags()$/;"	f
+plug#load	.\autoload\plug.vim	/^function! plug#load(...)$/;"	f
+plug#shellescape	.\autoload\plug.vim	/^function! plug#shellescape(arg, ...)$/;"	f
+plug_call	.\autoload\plug.vim	/^  function! s:plug_call(fn, ...)$/;"	f
+plug_expand	.\autoload\plug.vim	/^function! s:plug_expand(fmt)$/;"	f
+plug_fnamemodify	.\autoload\plug.vim	/^function! s:plug_fnamemodify(fname, mods)$/;"	f
+plug_getcwd	.\autoload\plug.vim	/^function! s:plug_getcwd()$/;"	f
+plug_tempname	.\autoload\plug.vim	/^function! s:plug_tempname()$/;"	f
+plug_window_exists	.\autoload\plug.vim	/^function! s:plug_window_exists()$/;"	f
+popup	.\plugins\fzf\plugin\fzf.vim	/^function! s:popup(opts) abort$/;"	f
+prepare	.\autoload\plug.vim	/^function! s:prepare(...)$/;"	f
+prepare	.\plugins\fzf\test\test_go.rb	/^  def prepare$/;"	f
+prepend_opts	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:prepend_opts(dict, eopts)$/;"	f
+present	.\plugins\fzf\plugin\fzf.vim	/^function! s:present(dict, ...)$/;"	f
+prev_default_command	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^    let prev_default_command = $FZF_DEFAULT_COMMAND$/;"	v
+preview_commit	.\autoload\plug.vim	/^function! s:preview_commit()$/;"	f
+process	.\plugins\vim-surround\plugin\surround.vim	/^function! s:process(string)$/;"	f
+progress_bar	.\autoload\plug.vim	/^function! s:progress_bar(line, bar, total)$/;"	f
+progress_opt	.\autoload\plug.vim	/^function! s:progress_opt(base)$/;"	f
+pushd	.\plugins\fzf\plugin\fzf.vim	/^function! s:pushd(dict)$/;"	f
+readonce	.\plugins\fzf\test\test_go.rb	/^  def readonce$/;"	f	class:TestBase
+reap	.\autoload\plug.vim	/^function! s:reap(name)$/;"	f
+redraw	.\plugins\vim-surround\plugin\surround.vim	/^function! s:redraw()$/;"	f
+reduce_line	.\plugins\fzf.vim\autoload\fzf\vim\complete.vim	/^function! s:reduce_line(lines)$/;"	f
+regress_bar	.\autoload\plug.vim	/^function! s:regress_bar()$/;"	f
+reindent	.\plugins\vim-surround\plugin\surround.vim	/^function! s:reindent() " {{{1$/;"	f
+reload_plugins	.\autoload\plug.vim	/^function! s:reload_plugins()$/;"	f
+remove_layout	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:remove_layout(opts)$/;"	f
+remove_rtp	.\autoload\plug.vim	/^function! s:remove_rtp()$/;"	f
+remove_triggers	.\autoload\plug.vim	/^function! s:remove_triggers(name)$/;"	f
+reorg_rtp	.\autoload\plug.vim	/^function! s:reorg_rtp()$/;"	f
+retries	.\plugins\fzf\test\test_go.rb	/^  def retries(times = 3)$/;"	f	class:TestBase.TestShell
+retry	.\autoload\plug.vim	/^function! s:retry()$/;"	f
+revert	.\autoload\plug.vim	/^function! s:revert()$/;"	f
+rm_rf	.\autoload\plug.vim	/^function! s:rm_rf(dir)$/;"	f
+rtp	.\autoload\plug.vim	/^function! s:rtp(spec)$/;"	f
+s:TYPE	.\autoload\plug.vim	/^let s:TYPE = {$/;"	v
+s:TYPE	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^let s:TYPE = {'dict': type({}), 'funcref': type(function('call')), 'string': type(''), 'list': type([])}$/;"	v
+s:ansi	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^let s:ansi = {'black': 30, 'red': 31, 'green': 32, 'yellow': 33, 'blue': 34, 'magenta': 35, 'cyan': 36}$/;"	v
+s:base_dir	.\plugins\fzf\plugin\fzf.vim	/^  let s:base_dir = expand('<sfile>:h:h')$/;"	v
+s:base_spec	.\autoload\plug.vim	/^let s:base_spec = { 'branch': 'master', 'frozen': 0 }$/;"	v
+s:bin	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^    let s:bin.preview = fnamemodify(s:bin.preview, ':8')$/;"	v
+s:bin	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^    let s:bin.preview = split(system('for %A in ("'.s:bin.preview.'") do @echo %~sA'), "\\n")[0]$/;"	v
+s:bin	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^  let s:bin.preview = 'bash '.escape(s:bin.preview, '\\')$/;"	v
+s:bin	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^let s:bin = {$/;"	v
+s:bin_dir	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^let s:bin_dir = expand('<sfile>:h:h:h').'\/bin\/'$/;"	v
+s:cpo_save	.\autoload\plug.vim	/^let s:cpo_save = &cpo$/;"	v
+s:cpo_save	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^let s:cpo_save = &cpo$/;"	v
+s:cpo_save	.\plugins\fzf.vim\autoload\fzf\vim\complete.vim	/^let s:cpo_save = &cpo$/;"	v
+s:cpo_save	.\plugins\fzf.vim\plugin\fzf.vim	/^let s:cpo_save = &cpo$/;"	v
+s:cpo_save	.\plugins\fzf\plugin\fzf.vim	/^let s:cpo_save = &cpo$/;"	v
+s:default_action	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^let s:default_action = {$/;"	v
+s:default_action	.\plugins\fzf\plugin\fzf.vim	/^let s:default_action = {$/;"	v
+s:default_layout	.\plugins\fzf\plugin\fzf.vim	/^let s:default_layout = { 'down': '~40%' }$/;"	v
+s:first_rtp	.\autoload\plug.vim	/^let s:first_rtp = s:escrtp(get(s:split_rtp(), 0, ''))$/;"	v
+s:fmt_excmd	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^let s:fmt_excmd = '   '.s:blue('%-38s', 'Statement').'%s'$/;"	v
+s:fzf_go	.\plugins\fzf\plugin\fzf.vim	/^let s:fzf_go = s:base_dir.'\/bin\/fzf'$/;"	v
+s:fzf_tmux	.\plugins\fzf\plugin\fzf.vim	/^let s:fzf_tmux = s:base_dir.'\/bin\/fzf-tmux'$/;"	v
+s:is_win	.\autoload\plug.vim	/^let s:is_win = has('win32')$/;"	v
+s:is_win	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^let s:is_win = has('win32') || has('win64')$/;"	v
+s:is_win	.\plugins\fzf.vim\autoload\fzf\vim\complete.vim	/^let s:is_win = has('win32') || has('win64')$/;"	v
+s:is_win	.\plugins\fzf.vim\plugin\fzf.vim	/^let s:is_win = has('win32') || has('win64')$/;"	v
+s:is_win	.\plugins\fzf\plugin\fzf.vim	/^let s:is_win = has('win32') || has('win64')$/;"	v
+s:last_rtp	.\autoload\plug.vim	/^let s:last_rtp  = s:escrtp(get(s:split_rtp(), -1, ''))$/;"	v
+s:launcher	.\plugins\fzf\plugin\fzf.vim	/^  let s:launcher = '%s'$/;"	v
+s:launcher	.\plugins\fzf\plugin\fzf.vim	/^  let s:launcher = function('s:xterm_launcher')$/;"	v
+s:layout_keys	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^let s:layout_keys = ['window', 'up', 'down', 'left', 'right']$/;"	v
+s:layout_keys	.\plugins\fzf\plugin\fzf.vim	/^let s:layout_keys = ['window', 'up', 'down', 'left', 'right']$/;"	v
+s:loaded	.\autoload\plug.vim	/^let s:loaded = get(s:, 'loaded', {})$/;"	v
+s:mac_gui	.\autoload\plug.vim	/^let s:mac_gui = has('gui_macvim') && has('gui_running')$/;"	v
+s:me	.\autoload\plug.vim	/^  let s:me = resolve(expand('<sfile>:p'))$/;"	v
+s:nbs	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^let s:nbs = nr2char(0x2007)$/;"	v
+s:nvim	.\autoload\plug.vim	/^let s:nvim = has('nvim-0.2') || (has('nvim') && exists('*jobwait') && !s:is_win)$/;"	v
+s:plug_buf	.\autoload\plug.vim	/^let s:plug_buf = get(s:, 'plug_buf', -1)$/;"	v
+s:plug_src	.\autoload\plug.vim	/^let s:plug_src = 'https:\/\/github.com\/junegunn\/vim-plug.git'$/;"	v
+s:plug_tab	.\autoload\plug.vim	/^let s:plug_tab = get(s:, 'plug_tab', -1)$/;"	v
+s:term_marker	.\plugins\fzf\plugin\fzf.vim	/^  let s:term_marker = ";#FZF"$/;"	v
+s:term_marker	.\plugins\fzf\plugin\fzf.vim	/^  let s:term_marker = '&::FZF'$/;"	v
+s:triggers	.\autoload\plug.vim	/^let s:triggers = get(s:, 'triggers', {})$/;"	v
+s:vim8	.\autoload\plug.vim	/^let s:vim8 = has('patch-8.0.0039') && exists('*job_start')$/;"	v
+s:wide	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^let s:wide = 120$/;"	v
+search_history_sink	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:search_history_sink(lines)$/;"	f
+section	.\autoload\plug.vim	/^function! s:section(flags)$/;"	f
+select_count	.\plugins\fzf\test\test_go.rb	/^          def select_count$/;"	f	class:Tmux.until
+send_keys	.\plugins\fzf\test\test_go.rb	/^  def send_keys(*args)$/;"	f	class:Tmux
+set_var	.\plugins\fzf\test\test_go.rb	/^  def set_var(name, val)$/;"	f	class:TestBase.TestFish
+set_var	.\plugins\fzf\test\test_go.rb	/^  def set_var(name, val)$/;"	f	class:TestBase.TestShell
+setup	.\plugins\fzf\test\test_go.rb	/^  def setup$/;"	f	class:TestBase.TestBash
+setup	.\plugins\fzf\test\test_go.rb	/^  def setup$/;"	f	class:TestBase.TestFish
+setup	.\plugins\fzf\test\test_go.rb	/^  def setup$/;"	f	class:TestBase.TestGoFZF
+setup	.\plugins\fzf\test\test_go.rb	/^  def setup$/;"	f	class:TestBase.TestShell
+setup	.\plugins\fzf\test\test_go.rb	/^  def setup$/;"	f	class:TestBase.TestZsh
+shellesc_cmd	.\autoload\plug.vim	/^function! s:shellesc_cmd(arg, script)$/;"	f
+shellesc_cmd	.\plugins\fzf\plugin\fzf.vim	/^function! s:shellesc_cmd(arg)$/;"	f
+shellesc_ps1	.\autoload\plug.vim	/^function! s:shellesc_ps1(arg)$/;"	f
+shellesc_sh	.\autoload\plug.vim	/^function! s:shellesc_sh(arg)$/;"	f
+shellscript	.\plugins\fzf\plugin\fzf.vim	/^    let shellscript = s:fzf_tempname()$/;"	v
+shortpath	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:shortpath()$/;"	f
+shortpath	.\plugins\fzf\plugin\fzf.vim	/^function! s:shortpath()$/;"	f
+snapshot	.\autoload\plug.vim	/^function! s:snapshot(force, ...) abort$/;"	f
+sort_buffers	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:sort_buffers(...)$/;"	f
+source	.\autoload\plug.vim	/^function! s:source(from, ...)$/;"	f
+spawn	.\autoload\plug.vim	/^function! s:spawn(name, cmd, opts)$/;"	f
+split	.\plugins\fzf\plugin\fzf.vim	/^function! s:split(dict)$/;"	f
+split_rtp	.\autoload\plug.vim	/^function! s:split_rtp()$/;"	f
+splittable	.\plugins\fzf\plugin\fzf.vim	/^function! s:splittable(dict)$/;"	f
+start_with?	.\plugins\fzf\test\test_go.rb	/^  def start_with?(_str)$/;"	f	class:NilClass
+status	.\autoload\plug.vim	/^function! s:status()$/;"	f
+status_load	.\autoload\plug.vim	/^function! s:status_load(lnum)$/;"	f
+status_update	.\autoload\plug.vim	/^function! s:status_update() range$/;"	f
+stdin	.\plugins\fzf\plugin\fzf.vim	/^    let stdin = has_key(a:dict, 'source') ? '' : '< \/dev\/tty'$/;"	v
+strip	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:strip(str)$/;"	f
+switch_in	.\autoload\plug.vim	/^function! s:switch_in()$/;"	f
+switch_out	.\autoload\plug.vim	/^function! s:switch_out(...)$/;"	f
+syntax	.\autoload\plug.vim	/^function! s:syntax()$/;"	f
+system	.\autoload\plug.vim	/^function! s:system(cmd, ...)$/;"	f
+system_chomp	.\autoload\plug.vim	/^function! s:system_chomp(...)$/;"	f
+tags_sink	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:tags_sink(lines)$/;"	f
+teardown	.\plugins\fzf\test\test_go.rb	/^  def teardown$/;"	f	class:TestBase.TestGoFZF
+teardown	.\plugins\fzf\test\test_go.rb	/^  def teardown$/;"	f	class:TestBase.TestShell
+tempname	.\plugins\fzf\test\test_go.rb	/^  def tempname$/;"	f	class:TestBase
+test_accept_non_empty	.\plugins\fzf\test\test_go.rb	/^  def test_accept_non_empty$/;"	f	class:TestBase.TestGoFZF
+test_accept_non_empty_with_empty_list	.\plugins\fzf\test\test_go.rb	/^  def test_accept_non_empty_with_empty_list$/;"	f	class:TestBase.TestGoFZF
+test_accept_non_empty_with_multi_selection	.\plugins\fzf\test\test_go.rb	/^  def test_accept_non_empty_with_multi_selection$/;"	f	class:TestBase.TestGoFZF
+test_alt_c	.\plugins\fzf\test\test_go.rb	/^  def test_alt_c$/;"	f	class:TestBase.TestShell
+test_alt_c_command	.\plugins\fzf\test\test_go.rb	/^  def test_alt_c_command$/;"	f	class:TestBase.TestShell
+test_bind	.\plugins\fzf\test\test_go.rb	/^  def test_bind$/;"	f	class:TestBase.TestGoFZF
+test_bind_print_query	.\plugins\fzf\test\test_go.rb	/^  def test_bind_print_query$/;"	f	class:TestBase.TestGoFZF
+test_bind_replace_query	.\plugins\fzf\test\test_go.rb	/^  def test_bind_replace_query$/;"	f	class:TestBase.TestGoFZF
+test_cancel	.\plugins\fzf\test\test_go.rb	/^  def test_cancel$/;"	f	class:TestBase.TestGoFZF
+test_change_top	.\plugins\fzf\test\test_go.rb	/^  def test_change_top$/;"	f	class:TestBase.TestGoFZF
+test_clear_list_when_header_lines_changed_due_to_reload	.\plugins\fzf\test\test_go.rb	/^  def test_clear_list_when_header_lines_changed_due_to_reload$/;"	f	class:TestBase.TestGoFZF
+test_clear_query	.\plugins\fzf\test\test_go.rb	/^  def test_clear_query$/;"	f	class:TestBase.TestGoFZF
+test_clear_selection	.\plugins\fzf\test\test_go.rb	/^  def test_clear_selection$/;"	f	class:TestBase.TestGoFZF
+test_ctrl_r	.\plugins\fzf\test\test_go.rb	/^  def test_ctrl_r$/;"	f	class:TestBase.TestShell
+test_ctrl_t	.\plugins\fzf\test\test_go.rb	/^  def test_ctrl_t$/;"	f	class:TestBase.TestShell
+test_ctrl_t_unicode	.\plugins\fzf\test\test_go.rb	/^  def test_ctrl_t_unicode$/;"	f	class:TestBase.TestShell
+test_custom_completion	.\plugins\fzf\test\test_go.rb	/^  def test_custom_completion$/;"	f	class:TestBase.CompletionTest
+test_cycle	.\plugins\fzf\test\test_go.rb	/^  def test_cycle$/;"	f	class:TestBase.TestGoFZF
+test_default_extended	.\plugins\fzf\test\test_go.rb	/^  def test_default_extended$/;"	f	class:TestBase.TestGoFZF
+test_dir_completion	.\plugins\fzf\test\test_go.rb	/^  def test_dir_completion$/;"	f	class:TestBase.CompletionTest
+test_dynamic_completion_loader	.\plugins\fzf\test\test_go.rb	/^  def test_dynamic_completion_loader$/;"	f	class:TestBase.TestBash
+test_escaped_meta_characters	.\plugins\fzf\test\test_go.rb	/^  def test_escaped_meta_characters$/;"	f	class:TestBase.TestGoFZF
+test_exact	.\plugins\fzf\test\test_go.rb	/^  def test_exact$/;"	f	class:TestBase.TestGoFZF
+test_execute	.\plugins\fzf\test\test_go.rb	/^  def test_execute$/;"	f	class:TestBase.TestGoFZF
+test_execute_multi	.\plugins\fzf\test\test_go.rb	/^  def test_execute_multi$/;"	f	class:TestBase.TestGoFZF
+test_execute_plus_flag	.\plugins\fzf\test\test_go.rb	/^  def test_execute_plus_flag$/;"	f	class:TestBase.TestGoFZF
+test_execute_shell	.\plugins\fzf\test\test_go.rb	/^  def test_execute_shell$/;"	f	class:TestBase.TestGoFZF
+test_exit_0	.\plugins\fzf\test\test_go.rb	/^  def test_exit_0$/;"	f	class:TestBase.TestGoFZF
+test_exit_0_exit_code	.\plugins\fzf\test\test_go.rb	/^  def test_exit_0_exit_code$/;"	f	class:TestBase.TestGoFZF
+test_exitstatus_empty	.\plugins\fzf\test\test_go.rb	/^  def test_exitstatus_empty$/;"	f	class:TestBase.TestGoFZF
+test_expect	.\plugins\fzf\test\test_go.rb	/^  def test_expect$/;"	f	class:TestBase.TestGoFZF
+test_expect_print_query	.\plugins\fzf\test\test_go.rb	/^  def test_expect_print_query$/;"	f	class:TestBase.TestGoFZF
+test_expect_print_query_select_1	.\plugins\fzf\test\test_go.rb	/^  def test_expect_print_query_select_1$/;"	f	class:TestBase.TestGoFZF
+test_expect_printable_character_print_query	.\plugins\fzf\test\test_go.rb	/^  def test_expect_printable_character_print_query$/;"	f	class:TestBase.TestGoFZF
+test_file_completion	.\plugins\fzf\test\test_go.rb	/^  def test_file_completion$/;"	f	class:TestBase.CompletionTest
+test_file_completion_root	.\plugins\fzf\test\test_go.rb	/^  def test_file_completion_root$/;"	f	class:TestBase.CompletionTest
+test_file_completion_unicode	.\plugins\fzf\test\test_go.rb	/^  def test_file_completion_unicode$/;"	f	class:TestBase.CompletionTest
+test_file_word	.\plugins\fzf\test\test_go.rb	/^  def test_file_word$/;"	f	class:TestBase.TestGoFZF
+test_filter_exitstatus	.\plugins\fzf\test\test_go.rb	/^  def test_filter_exitstatus$/;"	f	class:TestBase.TestGoFZF
+test_fzf_default_command	.\plugins\fzf\test\test_go.rb	/^  def test_fzf_default_command$/;"	f	class:TestBase.TestGoFZF
+test_fzf_default_command_failure	.\plugins\fzf\test\test_go.rb	/^  def test_fzf_default_command_failure$/;"	f	class:TestBase.TestGoFZF
+test_header	.\plugins\fzf\test\test_go.rb	/^  def test_header$/;"	f	class:TestBase.TestGoFZF
+test_header_and_header_lines	.\plugins\fzf\test\test_go.rb	/^  def test_header_and_header_lines$/;"	f	class:TestBase.TestGoFZF
+test_header_and_header_lines_reverse	.\plugins\fzf\test\test_go.rb	/^  def test_header_and_header_lines_reverse$/;"	f	class:TestBase.TestGoFZF
+test_header_and_header_lines_reverse_list	.\plugins\fzf\test\test_go.rb	/^  def test_header_and_header_lines_reverse_list$/;"	f	class:TestBase.TestGoFZF
+test_header_lines	.\plugins\fzf\test\test_go.rb	/^  def test_header_lines$/;"	f	class:TestBase.TestGoFZF
+test_header_lines_overflow	.\plugins\fzf\test\test_go.rb	/^  def test_header_lines_overflow$/;"	f	class:TestBase.TestGoFZF
+test_header_lines_reverse	.\plugins\fzf\test\test_go.rb	/^  def test_header_lines_reverse$/;"	f	class:TestBase.TestGoFZF
+test_header_lines_reverse_list	.\plugins\fzf\test\test_go.rb	/^  def test_header_lines_reverse_list$/;"	f	class:TestBase.TestGoFZF
+test_header_lines_with_nth	.\plugins\fzf\test\test_go.rb	/^  def test_header_lines_with_nth$/;"	f	class:TestBase.TestGoFZF
+test_header_reverse	.\plugins\fzf\test\test_go.rb	/^  def test_header_reverse$/;"	f	class:TestBase.TestGoFZF
+test_header_reverse_list	.\plugins\fzf\test\test_go.rb	/^  def test_header_reverse_list$/;"	f	class:TestBase.TestGoFZF
+test_history	.\plugins\fzf\test\test_go.rb	/^  def test_history$/;"	f	class:TestBase.TestGoFZF
+test_hscroll_off	.\plugins\fzf\test\test_go.rb	/^  def test_hscroll_off$/;"	f	class:TestBase.TestGoFZF
+test_info_hidden	.\plugins\fzf\test\test_go.rb	/^  def test_info_hidden$/;"	f	class:TestBase.TestGoFZF
+test_invalid_cache	.\plugins\fzf\test\test_go.rb	/^  def test_invalid_cache$/;"	f	class:TestBase.TestGoFZF
+test_invalid_cache_query_type	.\plugins\fzf\test\test_go.rb	/^  def test_invalid_cache_query_type$/;"	f	class:TestBase.TestGoFZF
+test_invalid_option	.\plugins\fzf\test\test_go.rb	/^  def test_invalid_option$/;"	f	class:TestBase.TestGoFZF
+test_inverse_only_search_should_not_sort_the_result	.\plugins\fzf\test\test_go.rb	/^  def test_inverse_only_search_should_not_sort_the_result$/;"	f	class:TestBase.TestGoFZF
+test_jump	.\plugins\fzf\test\test_go.rb	/^  def test_jump$/;"	f	class:TestBase.TestGoFZF
+test_jump_accept	.\plugins\fzf\test\test_go.rb	/^  def test_jump_accept$/;"	f	class:TestBase.TestGoFZF
+test_key_bindings	.\plugins\fzf\test\test_go.rb	/^  def test_key_bindings$/;"	f	class:TestBase.TestGoFZF
+test_long_line	.\plugins\fzf\test\test_go.rb	/^  def test_long_line$/;"	f	class:TestBase.TestGoFZF
+test_margin	.\plugins\fzf\test\test_go.rb	/^  def test_margin$/;"	f	class:TestBase.TestGoFZF
+test_margin_reverse	.\plugins\fzf\test\test_go.rb	/^  def test_margin_reverse$/;"	f	class:TestBase.TestGoFZF
+test_margin_reverse_list	.\plugins\fzf\test\test_go.rb	/^  def test_margin_reverse_list$/;"	f	class:TestBase.TestGoFZF
+test_marker	.\plugins\fzf\test\test_go.rb	/^  def test_marker$/;"	f	class:TestBase.TestGoFZF
+test_multi_max	.\plugins\fzf\test\test_go.rb	/^  def test_multi_max$/;"	f	class:TestBase.TestGoFZF
+test_multi_order	.\plugins\fzf\test\test_go.rb	/^  def test_multi_order$/;"	f	class:TestBase.TestGoFZF
+test_no_clear	.\plugins\fzf\test\test_go.rb	/^  def test_no_clear$/;"	f	class:TestBase.TestGoFZF
+test_or_operator	.\plugins\fzf\test\test_go.rb	/^  def test_or_operator$/;"	f	class:TestBase.TestGoFZF
+test_partial_caching	.\plugins\fzf\test\test_go.rb	/^  def test_partial_caching$/;"	f	class:TestBase.TestGoFZF
+test_phony	.\plugins\fzf\test\test_go.rb	/^  def test_phony$/;"	f	class:TestBase.TestGoFZF
+test_pointer	.\plugins\fzf\test\test_go.rb	/^  def test_pointer$/;"	f	class:TestBase.TestGoFZF
+test_pointer_with_jump	.\plugins\fzf\test\test_go.rb	/^  def test_pointer_with_jump$/;"	f	class:TestBase.TestGoFZF
+test_preview	.\plugins\fzf\test\test_go.rb	/^  def test_preview$/;"	f	class:TestBase.TestGoFZF
+test_preview_correct_tab_width_after_ansi_reset_code	.\plugins\fzf\test\test_go.rb	/^  def test_preview_correct_tab_width_after_ansi_reset_code$/;"	f	class:TestBase.TestGoFZF
+test_preview_file	.\plugins\fzf\test\test_go.rb	/^  def test_preview_file$/;"	f	class:TestBase.TestGoFZF
+test_preview_flags	.\plugins\fzf\test\test_go.rb	/^  def test_preview_flags$/;"	f	class:TestBase.TestGoFZF
+test_preview_hidden	.\plugins\fzf\test\test_go.rb	/^  def test_preview_hidden$/;"	f	class:TestBase.TestGoFZF
+test_preview_q_no_match	.\plugins\fzf\test\test_go.rb	/^  def test_preview_q_no_match$/;"	f	class:TestBase.TestGoFZF
+test_preview_q_no_match_with_initial_query	.\plugins\fzf\test\test_go.rb	/^  def test_preview_q_no_match_with_initial_query$/;"	f	class:TestBase.TestGoFZF
+test_preview_size_0	.\plugins\fzf\test\test_go.rb	/^  def test_preview_size_0$/;"	f	class:TestBase.TestGoFZF
+test_preview_update_on_select	.\plugins\fzf\test\test_go.rb	/^  def test_preview_update_on_select$/;"	f	class:TestBase.TestGoFZF
+test_process_completion	.\plugins\fzf\test\test_go.rb	/^  def test_process_completion$/;"	f	class:TestBase.CompletionTest
+test_query_unicode	.\plugins\fzf\test\test_go.rb	/^  def test_query_unicode$/;"	f	class:TestBase.TestGoFZF
+test_read0	.\plugins\fzf\test\test_go.rb	/^  def test_read0$/;"	f	class:TestBase.TestGoFZF
+test_reload	.\plugins\fzf\test\test_go.rb	/^  def test_reload$/;"	f	class:TestBase.TestGoFZF
+test_reload_even_when_theres_no_match	.\plugins\fzf\test\test_go.rb	/^  def test_reload_even_when_theres_no_match$/;"	f	class:TestBase.TestGoFZF
+test_scroll	.\plugins\fzf\test\test_go.rb	/^  def test_scroll$/;"	f	class:TestBase.TestGoFZF
+test_select_1	.\plugins\fzf\test\test_go.rb	/^  def test_select_1$/;"	f	class:TestBase.TestGoFZF
+test_select_1_exit_0_fail	.\plugins\fzf\test\test_go.rb	/^  def test_select_1_exit_0_fail$/;"	f	class:TestBase.TestGoFZF
+test_select_all_deselect_all_toggle_all	.\plugins\fzf\test\test_go.rb	/^  def test_select_all_deselect_all_toggle_all$/;"	f	class:TestBase.TestGoFZF
+test_smart_case_for_each_term	.\plugins\fzf\test\test_go.rb	/^  def test_smart_case_for_each_term$/;"	f	class:TestBase.TestGoFZF
+test_sync	.\plugins\fzf\test\test_go.rb	/^  def test_sync$/;"	f	class:TestBase.TestGoFZF
+test_tabstop	.\plugins\fzf\test\test_go.rb	/^  def test_tabstop$/;"	f	class:TestBase.TestGoFZF
+test_tac	.\plugins\fzf\test\test_go.rb	/^  def test_tac$/;"	f	class:TestBase.TestGoFZF
+test_tac_nosort	.\plugins\fzf\test\test_go.rb	/^  def test_tac_nosort$/;"	f	class:TestBase.TestGoFZF
+test_tac_sort	.\plugins\fzf\test\test_go.rb	/^  def test_tac_sort$/;"	f	class:TestBase.TestGoFZF
+test_tiebreak	.\plugins\fzf\test\test_go.rb	/^  def test_tiebreak$/;"	f	class:TestBase.TestGoFZF
+test_tiebreak_begin_algo_v2	.\plugins\fzf\test\test_go.rb	/^  def test_tiebreak_begin_algo_v2$/;"	f	class:TestBase.TestGoFZF
+test_tiebreak_end	.\plugins\fzf\test\test_go.rb	/^  def test_tiebreak_end$/;"	f	class:TestBase.TestGoFZF
+test_tiebreak_index_begin	.\plugins\fzf\test\test_go.rb	/^  def test_tiebreak_index_begin$/;"	f	class:TestBase.TestGoFZF
+test_tiebreak_length_with_nth	.\plugins\fzf\test\test_go.rb	/^  def test_tiebreak_length_with_nth$/;"	f	class:TestBase.TestGoFZF
+test_toggle_sort	.\plugins\fzf\test\test_go.rb	/^  def test_toggle_sort$/;"	f	class:TestBase.TestGoFZF
+test_unicode_case	.\plugins\fzf\test\test_go.rb	/^  def test_unicode_case$/;"	f	class:TestBase.TestGoFZF
+test_unset_completion	.\plugins\fzf\test\test_go.rb	/^  def test_unset_completion$/;"	f	class:TestBase.CompletionTest
+test_vanilla	.\plugins\fzf\test\test_go.rb	/^  def test_vanilla$/;"	f	class:TestBase.TestGoFZF
+test_with_nth	.\plugins\fzf\test\test_go.rb	/^  def test_with_nth$/;"	f	class:TestBase.TestGoFZF
+test_with_nth_ansi	.\plugins\fzf\test\test_go.rb	/^  def test_with_nth_ansi$/;"	f	class:TestBase.TestGoFZF
+test_with_nth_basic	.\plugins\fzf\test\test_go.rb	/^  def test_with_nth_basic$/;"	f	class:TestBase.TestGoFZF
+test_with_nth_no_ansi	.\plugins\fzf\test\test_go.rb	/^  def test_with_nth_no_ansi$/;"	f	class:TestBase.TestGoFZF
+tick	.\autoload\plug.vim	/^function! s:tick()$/;"	f
+tmux_enabled	.\plugins\fzf\plugin\fzf.vim	/^function! s:tmux_enabled()$/;"	f
+to_a	.\autoload\plug.vim	/^function! s:to_a(v)$/;"	f
+to_s	.\autoload\plug.vim	/^function! s:to_s(v)$/;"	f
+trim	.\autoload\plug.vim	/^function! s:trim(str)$/;"	f
+unset_var	.\plugins\fzf\test\test_go.rb	/^  def unset_var(name)$/;"	f	class:TestBase.TestShell
+unsets	.\plugins\fzf\test\test_go.rb	/^    def unsets$/;"	f	class:Shell
+until	.\plugins\fzf\test\test_go.rb	/^  def until(refresh = false, pane = 0)$/;"	f	class:Tmux
+update	.\autoload\plug.vim	/^function! s:update(force, names)$/;"	f
+update_finish	.\autoload\plug.vim	/^function! s:update_finish()$/;"	f
+update_impl	.\autoload\plug.vim	/^function! s:update_impl(pull, force, args) abort$/;"	f
+update_python	.\autoload\plug.vim	/^function! s:update_python()$/;"	f
+update_ruby	.\autoload\plug.vim	/^function! s:update_ruby()$/;"	f
+update_vim	.\autoload\plug.vim	/^function! s:update_vim()$/;"	f
+upgrade	.\autoload\plug.vim	/^function! s:upgrade()$/;"	f
+upgrade	.\plugins\fzf\plugin\fzf.vim	/^function! s:upgrade(dict)$/;"	f
+upgrade_specs	.\autoload\plug.vim	/^function! s:upgrade_specs()$/;"	f
+use_sh	.\plugins\fzf\plugin\fzf.vim	/^function! s:use_sh()$/;"	f
+validate_layout	.\plugins\fzf\plugin\fzf.vim	/^function! s:validate_layout(layout)$/;"	f
+version_requirement	.\autoload\plug.vim	/^function! s:version_requirement(val, min)$/;"	f
+wait	.\plugins\fzf\test\test_go.rb	/^def wait$/;"	f
+warn	.\autoload\plug.vim	/^function! s:warn(cmd, msg)$/;"	f
+warn	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:warn(message)$/;"	f
+warn	.\plugins\fzf\plugin\fzf.vim	/^function! s:warn(msg)$/;"	f
+windows_sink	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:windows_sink(line)$/;"	f
+with_cd	.\autoload\plug.vim	/^function! s:with_cd(cmd, dir, ...)$/;"	f
+wrap	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:wrap(name, opts, bang)$/;"	f
+wrap	.\plugins\vim-surround\plugin\surround.vim	/^function! s:wrap(string,char,type,removed,special)$/;"	f
+wrap_cmds	.\autoload\plug.vim	/^  function! s:wrap_cmds(cmds)$/;"	f
+wrap_cmds	.\plugins\fzf\plugin\fzf.vim	/^  function! s:wrap_cmds(cmds)$/;"	f
+wrapped	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^  let wrapped['sink*'] = remove(wrapped, 'newsink')$/;"	v
+wrapreg	.\plugins\vim-surround\plugin\surround.vim	/^function! s:wrapreg(reg,char,removed,special)$/;"	f
+writelines	.\plugins\fzf\test\test_go.rb	/^  def writelines(path, lines)$/;"	f	class:TestBase
+xterm_launcher	.\plugins\fzf\plugin\fzf.vim	/^function! s:xterm_launcher()$/;"	f
+yS	.\plugins\vim-surround\plugin\surround.vim	/^  nmap yS  <Plug>YSurround$/;"	m
+ySS	.\plugins\vim-surround\plugin\surround.vim	/^  nmap ySS <Plug>YSsurround$/;"	m
+ySs	.\plugins\vim-surround\plugin\surround.vim	/^  nmap ySs <Plug>YSsurround$/;"	m
+yank_to_register	.\plugins\fzf.vim\autoload\fzf\vim.vim	/^function! s:yank_to_register(data)$/;"	f
+ys	.\plugins\vim-surround\plugin\surround.vim	/^  nmap ys  <Plug>Ysurround$/;"	m
+yss	.\plugins\vim-surround\plugin\surround.vim	/^  nmap yss <Plug>Yssurround$/;"	m
+zsh	.\plugins\fzf\test\test_go.rb	/^    def zsh$/;"	f	class:Shell
