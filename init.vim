@@ -7,7 +7,7 @@
 "Habe ein python environment angelegt für die Dependencies bzw modules die
 "nvim braucht der Pfad weist eben auf die python exe in dem environment, weil
 "wir das das python module für nvim installiert haben.
-let g:python3_host_prog = 'C:\Nvim_venv\env\Scripts\python.exe'
+let g:python3_host_prog='/usr/bin/python3'
 
 set encoding=utf-8  " The encoding displayed.
 set fileencoding=utf-8  " The encoding written to file.
@@ -46,10 +46,10 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 " tell vim where to put its backup files
  set backup
- set backupdir=C:\Users\weitzsim\AppData\Local\nvim\backupFilesVim\backupFiles\
+ set backupdir=~\backupFilesVim\backupFiles\
 " " tell vim where to put swap files
- set dir=C:\Users\weitzsim\AppData\Local\nvim\backupFilesVim\swpFiles\
- set undodir=C:\Users\weitzsim\AppData\Local\nvim\backupFilesVim\undoFiles\
+ set dir=~\backupFilesVim\swpFiles\
+ set undodir=~\backupFilesVim\undoFiles\
 
 "-------------------------------------------------------------
 		"Einstellungen für die Suche
@@ -57,7 +57,7 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 "The ** wildcard matches all subdirectories beneath the app/ directory
 "find-cmd findet jetzt files im app-Directory und allen Subdirs darunter
-:set path+=C:/BitbucketRepos/**
+":set path+=C:/BitbucketRepos/**
 
 "remove the hightlighting of the current search with ESC
 nnoremap <esc> :noh<return><esc>
@@ -78,7 +78,6 @@ set smartcase
 "-------------------------------------------------------------
 		"Einstellungen für Einrueckungen, Tabs 
 "-------------------------------------------------------------
-
 "fine tune the amount of whitespace to be inserted with a <tab> character
 set tabstop=4
 set softtabstop=4
@@ -115,7 +114,7 @@ set expandtab
 "-------------------------------------------------------------
 
 " Plugins will be downloaded under the specified directory.
-call plug#begin('$USERPROFILE/AppData/Local/nvim/plugins')
+call plug#begin('~/.config/nvim/plugged')
 
 "PlugInstall [name ...] [#threads] 	Install plugins
 "PlugUpdate [name ...] [#threads] 	Install or update plugins
