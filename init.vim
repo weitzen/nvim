@@ -125,6 +125,7 @@ call plug#begin('$USERPROFILE/AppData/Local/nvim/plugins')
 
 " Declare the list of plugins.
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive' " the essential Git plugin
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'nelstrom/vim-visual-star-search'
